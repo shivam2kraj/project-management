@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+## Project Overview
+This React application is designed to manage projects and their associated files, as well as provide an editor for image and video manipulation. The application uses Material-UI (MUI) for its UI components and styling.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation:
+1) npx create-react-app project-management
+2) npm install @mui/material
+3) npm install @emotion/react
+4) npm install react-router-dom
+5) npm install @mui/icons-material
+6) npm install @emotion/styled  
+# Purpose: 
+Serves as the entry point of the application, setting up the routing and theming.
+# Routing: 
+Uses react-router-dom to define routes for three main pages: Projects, Project Files, and Editor.
 
-## Available Scripts
+## Navbar Component
 
-In the project directory, you can run:
+# Purpose: 
+Provides navigation links and user account options.
+Features:  
+Includes navigation buttons for the Projects and Editor pages, which are always visible. It also has an account icon that opens a menu with profile and logout options.
 
-### `npm start`
+## Projects Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Purpose: 
+Displays a table of projects with columns for Name, Role, Creation Date, Status, and Actions.
+# Components: 
+Contains a Navbar and a ProjectsTable component.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Files Page
 
-### `npm test`
+# Purpose: 
+Displays a table of files associated with a selected project, with columns for Name, Status, and Priority.
+# Components: 
+Contains a Navbar and a ProjectFilesTable component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Editor Page
 
-### `npm run build`
+# Purpose: 
+Provides a UI for uploading and editing images and videos. Users can draw bounding boxes on images and perform frame-by-frame segmentation on videos.
+# Features: 
+Includes buttons for uploading images and videos, and controls for playing and pausing video playback, as well as navigating frames.
+# Components: 
+Contains a Navbar and an Editor component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Key Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Navigation: 
+The Navbar provides easy navigation between the main pages and includes an account icon for user options.
+# Project Management: 
+The Projects and Project Files pages allow users to view and manage projects and their associated files.
+# Image and Video Editing: 
+The Editor page provides tools for users to upload, view, and manipulate images and videos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Theme and Styling
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# MUI Theming: 
+The application uses MUI's ThemeProvider to apply a consistent theme across all components. This makes it easy to manage and customize the look and feel of the application.
